@@ -1,0 +1,260 @@
+body,h1{
+	margin: 0;
+}
+body *{
+	font-family: arial;
+}
+.container{
+	width: 1140px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.row{
+	display: flex;
+}
+nav ul{
+	display: flex;
+	list-style-type: none;
+	justify-content: flex-end;
+}
+nav a{
+color: black;
+text-decoration: none;
+font-weight: bold;
+transition: all ease 0.3s;
+}
+.active{
+	color: rgb(255,192,6);
+}
+nav a:hover{
+color: rgb(255,192,6);
+}
+nav li{
+	padding: 10px 15px;
+}
+.align-center{
+	align-items: center;
+}
+nav{
+	flex-grow: 1;
+}
+.registeration a{
+	background-color: rgb(255,192,6);
+	text-decoration: none;
+	color: white;
+	padding: 15px 25px;
+	font-weight: bold;
+	border-radius: 4px;
+	transition: all ease 0.3s;
+}
+.registeration a:hover{
+background: black;
+}
+.main_section{
+	height: 650px;
+	background-color: rgb(0,0,0,0.6);
+	display: flex;
+	align-items: center;
+}
+.slider_text h1{
+	font-size: 60px;
+	color: white;
+
+}
+.slider_text{
+	width: 60%;
+	padding: 60px;
+	position: relative;
+	z-index: 1;
+}
+.slider_text:before{
+	content: "";
+	background-color: rgb(255,192,6,0.6);
+	width: 60%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 5px;
+
+	z-index: -1;
+}
+.courses{
+	background-color: rgb(0,0,0);
+	text-decoration: none;
+	color: white;
+	padding: 15px 25px;
+	font-weight: bold;
+	border-radius: 4px;
+	transition: all ease 0.3s;
+}
+.courses:hover{
+	background-color: rgb(255,255,255);
+	color: black;
+
+	
+}
+.input-div{
+
+	padding:0 10px; 
+	width: 25%;
+}
+.input-div input[type=text]{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 15px;
+	border:none;
+	border-radius: 3px;
+	/*border:1px solid #ccc; */
+}
+.search_form{
+	margin-bottom: 100px;
+	margin-top: -55px;
+}
+.search_form .container{
+	background-color: rgb(255,192,6);
+	padding: 50px;
+	border-radius: 5px;
+}
+::placeholder{
+font-size: 16px;
+}
+.staff_child{
+	width: 33.33%;
+	border:1px solid #ccc;
+	padding: 40px;
+	position: relative;
+}
+.staff_child:before{
+	background-image: url('img/feature-bg.jpg');
+	content: "";
+	/*background-color: red;*/
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	opacity: 0;
+	transition: all ease 0.3s;
+}
+.staff_child:hover:before{
+	opacity: 1;
+}
+.staff_child:after{
+	content: "";
+	background-color: rgb(0,0,0,0.8);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	opacity: 0;
+	transition: all ease 0.3s;
+}
+.staff_child:hover:after{
+	opacity: 1;
+}
+.staff_child:hover *{
+	color: white !important;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	background-color: white;
+	z-index: 5;
+	border-bottom: 1px solid #ccc;
+}
+.popular_courses h2{
+	font-size: 30px;
+	text-align: center;
+}
+.description{
+	overflow: hidden;
+	border:1px solid #ccc;
+	width: 33.33%;
+	margin: 0 10px;
+}
+.description img{
+	width: 100%;
+}
+.img_details{
+	padding: 20px;
+	margin-top: -44px;
+	position: relative;
+	z-index: 4;
+}
+.person_details img{
+	width: 70px;
+	border-radius: 50px;
+}
+.person_details{
+	display: flex;
+}
+.desc_image{
+	/*z-index: 0;*/
+transition: transform ease 0.3s;
+}
+.desc_image:hover{
+transform: scale(1.1);
+}
+.span_btn span{
+	background-color: rgb(255,192,6);
+	color: white;
+	display: inline-block;
+	padding: 10px 20px;
+	width: 70px;
+	border:1px solid white
+}
+.span-left-btn{
+	border-radius: 50px 0 0 50px;
+}
+.span-right-btn{
+	border-radius: 0px 50px 50px 0px;
+}
+.links{
+	width: 33.33%;
+	margin-right: 20px;
+}
+.upper_footer{
+	background-color: #222;
+	padding: 100px 0;
+}
+.link_heading{
+	color: white;
+	margin-top: 0;
+	font-size: 24px;
+}
+.important_link{
+	width: 30%;
+
+}
+.important_link ul{
+	list-style-type: none;
+	padding: 0;
+}
+.important_link li{
+	padding: 10px;
+}
+.important_link li a{
+color: white;
+text-decoration:none;
+transition: all ease 0.4s;
+}
+.important_link li a:hover{
+color: rgb(255,192,6);
+}
+.address{
+	color: white;
+	margin-top: 10px;
+	font-weight: bold;
+	display: flex;
+}
+.lower_footer{
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+	background-color: #333;
+}
